@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { SafeAreaView, View, Text, TextInput, Button, Image, StyleSheet } from 'react-native';
+import React, { useState } from "react";
+import { SafeAreaView, View, Text, TextInput, Button, Image, StyleSheet } from "react-native";
 
 const DiceGameScreen = () => {
-  const [chosenNumber, setChosenNumber] = useState('');
+  const [chosenNumber, setChosenNumber] = useState("");
   const [diceNumber, setDiceNumber] = useState(null);
   const [points, setPoints] = useState(0);
 
@@ -23,7 +23,7 @@ const DiceGameScreen = () => {
       {diceNumber !== null && <View style={styles.resultContainer}>
           <Text style={styles.resultText}>Dice Rolled: {diceNumber}</Text>
           <Image source={{
-        uri: 'https://tinyurl.com/42evm3m3'
+        uri: "https://tinyurl.com/42evm3m3"
       }} style={styles.diceImage} />
         </View>}
       <Text style={styles.points}>Points: {points}</Text>
@@ -34,12 +34,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#f5f5f5'
+    backgroundColor: "#f5f5f5"
   },
   title: {
     fontSize: 32,
-    fontWeight: 'bold',
-    textAlign: 'center',
+    fontWeight: "bold",
+    textAlign: "center",
     marginVertical: 20
   },
   label: {
@@ -48,14 +48,14 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 40,
-    borderColor: '#ccc',
+    borderColor: "#ccc",
     borderWidth: 1,
     borderRadius: 5,
     paddingHorizontal: 10,
     marginBottom: 20
   },
   resultContainer: {
-    alignItems: 'center',
+    alignItems: "center",
     marginVertical: 20
   },
   resultText: {
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
   },
   points: {
     fontSize: 24,
-    textAlign: 'center',
+    textAlign: "center",
     marginTop: 20
   }
 });
